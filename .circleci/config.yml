@@ -29,4 +29,5 @@ jobs:
           name: run lint
           command: |
             . venv/bin/activate
-            make lint
+            make lint > lint_log.txt
+            cat lint_log.txt
